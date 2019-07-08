@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import { DiscussionEmbed } from "disqus-react"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -9,11 +10,15 @@ import { rhythm, scale } from "../utils/typography"
 class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
+    const { title, services } = this.props.data.site.siteMetadata
     const { previous, next } = this.props.pageContext
+    const disqusConfig = {
+      shortname: services.disqus.shortname,
+      config: { identifier: this.props['*'], title },
+    }
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={this.props.location} title={title}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
@@ -41,6 +46,7 @@ class BlogPostTemplate extends React.Component {
             marginBottom: rhythm(1),
           }}
         />
+        <DiscussionEmbed {...disqusConfig} />
         <Bio />
 
         <ul
@@ -80,6 +86,11 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        services {
+          disqus {
+            shortname
+          }
+        }
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {

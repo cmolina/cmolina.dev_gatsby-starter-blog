@@ -1,11 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `Carlos Molina Avendaño Blog`,
+    title: `Carlos Molina's Blog`,
     author: `Carlos Molina Avendaño`,
     description: `Learner. I like to write and teach.`,
     siteUrl: `https://cmolina.dev/`,
     social: {
       twitter: `camolin3`,
+    },
+    services: {
+      disqus: {
+        shortname: `cmolina-dev`
+      }
     },
   },
   plugins: [
@@ -50,9 +55,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingIds: [`UA-143353942-1`],
+        pluginConfig: {
+          respectDNT: true
+        },
       },
     },
     `gatsby-plugin-feed`,
