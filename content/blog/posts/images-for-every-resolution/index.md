@@ -50,7 +50,7 @@ But how do I knew the relationship between _screen pixels_ and `CSS px`? Thankfu
 window.devicePixelRatio // my result was "2"
 ```
 
-This result depends on the screen the browser is being used. If you happen to have another connected screen, this result may vary. Regular desktop screens should return `1px`. The newest phones are returning `3px`.
+This result depends on the screen the browser is being used. If you happen to have another connected screen, this result may vary. Older desktop screens usually return `1`. The newest phones are returning `3`.
 
 ## How many images should I provide?
 
