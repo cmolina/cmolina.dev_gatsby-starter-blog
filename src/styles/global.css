@@ -1,0 +1,15 @@
+:root {
+    --primary-color-1: #9501b3;
+    --primary-color-2: #8601b3;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    color: transparent;
+    background: linear-gradient(to right, var(--primary-color-1), var(--primary-color-2));
+    background-clip: text;
+    line-height: 1.5;
+}
+
+hr + .bio {
+    margin-bottom: 25vw !important;
+}

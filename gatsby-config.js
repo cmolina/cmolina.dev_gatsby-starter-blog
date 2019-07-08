@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
-    author: `Kyle Mathews`,
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    title: `Carlos Molina Avendaño Blog`,
+    author: `Carlos Molina Avendaño`,
+    description: `Learner. I like to write and teach.`,
+    siteUrl: `https://cmolina.dev/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `camolin3`,
     },
   },
   plugins: [
@@ -39,6 +39,8 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
+          `gatsby-remark-autolink-headers`,
+          `gatsby-remark-external-links`,
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
@@ -57,13 +59,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Carlos Molina A. Blog`,
+        short_name: `cmolina`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/favicon.png`,
       },
     },
     `gatsby-plugin-offline`,
