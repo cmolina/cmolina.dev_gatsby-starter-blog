@@ -27,7 +27,11 @@ After a bit of search, I realized I was using a high-density screen. In particul
 The solution I found implies using the `srcset` attribute with a list of higher resolution images separated by commas, and let the browser choose what is best for the current screen. In my case, it looked like this
 
 ```html
-<img src="icon-25.png" srcset="icon-25.png 1x, icon-50.png 2x" alt="" />
+<img
+    src="icon-25.png"
+    srcset="icon-25.png 1x, icon-50.png 2x"
+    alt=""
+    />
 ```
 
 But I still didn't understand why should I provide an image with the double of the pixels. Pixels are pixels. Right?
@@ -85,4 +89,4 @@ Summarizing,
 That's all for now. Have a good day!
 
 [^1]: Bert Boss wrote an article for the W3C explaining the different units available in CSS, a bit of history, and which should we use depending on each situation https://www.w3.org/Style/Examples/007/units.en.html
-[^2]: Worldwide support is over 90%. Anyway, you should understand who your users are, what devices are using, and provide what makes sense for your case https://caniuse.com/#search=srcset
+[^2]: `srcset` worldwide support is over 90%. Anyway, you should understand who your users are, what devices are using, and provide what makes sense for your case https://caniuse.com/#search=srcset
