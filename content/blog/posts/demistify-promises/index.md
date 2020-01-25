@@ -1,5 +1,5 @@
 ---
-title: Know your tools - JavaScript Promises
+title: "Know your tools: JavaScript Promises"
 date: "2019-08-07T07:40:48.892Z"
 description: I am sure you have used Promises before, but if you avoid them because of their mystical behavior, this article is for you.
 ---

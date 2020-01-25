@@ -189,6 +189,9 @@ pre[class*="language-"].line-numbers.line-numbers {
 
 pre[class*="language-"].line-numbers.line-numbers .line-numbers-rows {
     left: 22px !important;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
 }
 
 .gatsby-highlight pre[class*="language-"].line-numbers {
