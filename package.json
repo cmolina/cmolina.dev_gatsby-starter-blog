@@ -1,12 +1,9 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "cmolina.dev",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "Personal blog about software",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
-  },
+  "author": "Carlos Molina A.",
   "dependencies": {
     "disqus-react": "^1.0.7",
     "gatsby": "^2.19.5",
@@ -41,7 +38,7 @@
   "devDependencies": {
     "prettier": "^1.19.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://cmolina.dev/",
   "keywords": [
     "gatsby"
   ],
@@ -49,7 +46,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/camolin3/cmolina.dev.git"
   },
   "scripts": {
     "build": "gatsby build",
