@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `https://cmolina.dev/`,
     social: {
       twitter: `camolin3`,
+      github: `camolin3`,
     },
     services: {
       disqus: {
