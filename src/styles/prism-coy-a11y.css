@@ -30,7 +30,7 @@ pre[class*="language-"] {
 }
 pre[class*="language-"]>code {
     position: relative;
-    border-left: 10px solid #358ccb;
+    border-left: .2rem solid #358ccb;
     box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
     background-color: #fdfdfd;
     background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
@@ -42,7 +42,8 @@ pre[class*="language-"]>code {
 code[class*="language"] {
     max-height: inherit;
     height: inherit;
-    padding: 0 1em;
+    padding-left: .5rem;
+    margin-left: .5rem;
     display: block;
     overflow: auto;
 }
@@ -188,7 +189,7 @@ pre[class*="language-"].line-numbers.line-numbers {
 }
 
 pre[class*="language-"].line-numbers.line-numbers .line-numbers-rows {
-    left: 22px !important;
+    left: .5rem !important;
     top: 0;
     bottom: 0;
     overflow: hidden;
@@ -198,7 +199,7 @@ pre[class*="language-"].line-numbers.line-numbers .line-numbers-rows {
     position: relative;
 	counter-reset: linenumber;
     padding: 0;
-    padding-left: 3rem;
+    padding-left: 1.5rem;
     overflow: initial;
 }
 
@@ -225,6 +226,7 @@ pre[class*="language-"].line-numbers.line-numbers .line-numbers-rows {
     display: block;
     padding-right: 0.8rem;
     text-align: right;
+    min-width: 1.875rem;
 }
 
 /* Plugin styles: Highlight */
@@ -245,9 +247,8 @@ pre .line-highlight {
 .gatsby-highlight-code-line {
     background-color: #feb;
     display: block;
-    margin-right: -1em;
-    margin-left: -1em;
-    padding-right: 1em;
-    padding-left: 0.75em;
+    margin-left: -.5rem;
+    padding-left: .25rem;
+    min-width: 80ch;
     border-left: 0.25em solid #f99;
 }
