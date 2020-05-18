@@ -1,5 +1,5 @@
 ---
-title: "Retrying functions"
+title: "Retrying functions in JavaScript"
 date: "2020-02-20T07:12:28.079Z"
 description: "The problem statement is: you want to execute a function that may fail, and you want to retry it N times. How could you solve this?"
 ---
