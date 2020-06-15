@@ -49,6 +49,7 @@ const Bio = () => {
           marginRight: rhythm(1 / 2),
           marginBottom: 0,
           minWidth: 50,
+          border: ".1rem solid purple",
           borderRadius: `100%`,
         }}
         imgStyle={{
