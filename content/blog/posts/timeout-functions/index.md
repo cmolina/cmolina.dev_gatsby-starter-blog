@@ -52,7 +52,7 @@ The functions in the event loop are called **tasks** or **macrotasks**. How are 
 
 The interesting thing about macrotasks is, once a task starts running it will run until completion with no interruptions. That's the reason why `uninterruptibleFaultySync()`, which never ends, will run forever. But for other functions that do complete, they allow the event loop to execute the next function in its queue.
 
-This is not the whole story. There are other types of functions that are considered by the event loop which have more priority than the macrotasks: they are called **microtasks**. Microtasks are run when the current microtask completes, and the next macrotask will not be taken until the list of microtasks is empty. How are microtasks created? With Promises and calls to `queueMicrotask()`.
+This is not the whole story. There are other types of functions that are considered by the event loop which have more priority than the macrotasks: they are called **microtasks**. Microtasks are run when the current macrotask completes, and the next macrotask will not be taken until the list of microtasks is empty. How are microtasks created? With Promises and calls to `queueMicrotask()`.
 
 And because microtasks functions will be run until completion with no interruptions, calling `uninterruptibleFaultyAsync()` will keep putting elements in the microtask list, never allowing pending macrotasks to be started. But for other microtasks that do complete, without creating infinite microtasks, they allow the event loop to keep running the macrotasks in its queue.
 
