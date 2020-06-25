@@ -49,6 +49,7 @@
   },
   "scripts": {
     "build": "gatsby build",
+    "prebuild": "rm -rf public",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
