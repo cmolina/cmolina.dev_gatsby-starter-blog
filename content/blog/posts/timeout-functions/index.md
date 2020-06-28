@@ -22,7 +22,7 @@ function runWithTimeout(fn, timeoutInMs) {
 }
 ```
 
-It is meant to be used by passing a function with no parameters, plus how many milliseconds should be allowed to run. And by wrapping it in a Promise it can either support synchronous and asynchronous values.
+It is meant to be used by passing a function with no parameters, plus how many milliseconds should be allowed to run. And by wrapping it in a Promise it can support both synchronous and asynchronous values.
 
 However, `runWithTimeout()` doesn't work as expected.
 
