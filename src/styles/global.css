@@ -1,11 +1,12 @@
 :root {
     --primary-color-1: #508;
     --primary-color-2: #80a;
+    --mono-font: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 }
 
 h1, h2, h3, h4, h5, h6, a {
     color: transparent;
-    background: linear-gradient(to bottom, var(--primary-color-1), var(--primary-color-2));
+    background: linear-gradient(to bottom right, var(--primary-color-1), var(--primary-color-2));
     background-clip: text;
     line-height: 1.5;
 }

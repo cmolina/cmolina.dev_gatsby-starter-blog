@@ -9,7 +9,7 @@ code[class*="language-"],
 pre[class*="language-"] {
     color: black;
     background: none;
-    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-family: var(--mono-font);
     font-size: 1em;
     text-align: left;
     white-space: pre;
@@ -30,8 +30,8 @@ pre[class*="language-"] {
 }
 pre[class*="language-"]>code {
     position: relative;
-    border-left: .2rem solid #358ccb;
-    box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
+    border-left: .2rem solid var(--primary-color-2);
+    box-shadow: -1px 0px 0px 0px var(--primary-color-2), 0px 0px 0px 1px #dfdfdf;
     background-color: #fdfdfd;
     background-image: linear-gradient(transparent 50%, rgba(69, 142, 209, 0.04) 50%);
     background-size: 3em 3em;
@@ -251,4 +251,21 @@ pre .line-highlight {
     padding-left: .25rem;
     min-width: 80ch;
     border-left: 0.25em solid #f99;
+}
+
+/* Plugin gatsby-remark-prismjs-title */
+.gatsby-code-title {
+    position: relative;
+    top: 10px;
+}
+  
+.gatsby-code-title span {
+    font-family: var(--mono-font);
+    font-weight: 600;
+    font-size: 90%;
+    border: solid 1px #dfdfdf;
+    border-left: none;
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem;
+    padding: .2rem 2rem;
 }

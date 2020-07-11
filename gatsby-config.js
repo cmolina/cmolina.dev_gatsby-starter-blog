@@ -6,7 +6,7 @@ module.exports = {
     siteUrl: `https://cmolina.dev/`,
     social: {
       twitter: `camolin3`,
-      github: `camolin3`,
+      github: `cmolina`,
     },
     services: {
       disqus: {
@@ -45,6 +45,7 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
+          `gatsby-remark-prismjs-title`,
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
@@ -59,6 +60,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-catch-links`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-feed`,
     {
